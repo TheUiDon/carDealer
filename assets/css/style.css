@@ -1,0 +1,244 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    font-family: Poppins;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* root */
+:root {
+    --primary: #FFE600!important;
+    --primary500: #FFE500!important;
+    --secondary: #1523A1!important;
+    --secondary500: #0A135F!important;
+    --footer: #0C1033!important;
+}
+
+/* import Fonts */
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/Poppins/Poppins-Black.ttf);
+    font-weight: 900;
+}
+
+
+/* Roboto */
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+body::-webkit-scrollbar {
+    width:  0.5rem;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    /* color of the scroll thumb */
+    border-radius: 0.5rem;
+
+}
+
+
+
+.text-primary, .bg-primary {
+    color: #1523A1!important;
+}
+
+.text-warning, .bg-warning {
+    color: #FFE600!important;
+}
+
+
+/* Navbar Section */
+a.nav-link.active, 
+a.nav-link:hover,
+a.dropdown-item:hover {
+    background-color: var(--primary);
+    border-radius: 0.3125rem;
+   
+}
+
+a.nav-link {
+    font-family: Poppins;
+    font-weight: 400;
+    /* font-size: 1.1rem; */
+    padding: 0 0.1rem;
+    margin-right: .5rem;
+}
+
+/* Hero Section */
+section#hero {
+    height: 95vh;
+    background: #1523a147 url('/assets/img/hero.png') center no-repeat;
+    /* background: #1523a147;
+    background-image: url('/assets/img/hero.png');
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+#hero h1.h1, h1.h1 span {
+    font-family: Poppins;
+    font-weight: 900;
+    /* font-size: 6rem; */
+
+}
+
+#hero p.p, p.p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    /* font-size: 1.4rem; */
+}
+
+.features {
+    background-color: var(--secondary);
+}
+
+/* Btn */
+button.btn {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    padding-right: 2.5rem;
+    color: var(--secondary);
+    border: .1875rem solid var(--secondary);
+    background-color: #fff;
+    box-shadow: 1rem 0.5rem 1rem var(--primary);
+}
+
+button.btn:hover {
+    color: var(--secondary);
+    border: .1875rem solid var(--secondary);
+    background-color: #fff;
+}
+
+i.bi.bi-caret-right-fill {
+    color: var(--secondary);
+}
+
+
+#cta {
+    margin-top: -10vh;
+}
+
+.cta h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: -2vh;
+}
+
+.cta p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+i.bi.text-light {
+  color: #fff!important;  
+}
+
+.title {
+    background: linear-gradient(90deg, #1523A1 2.26%, rgba(255, 230, 0, 0) 88.44%);
+}
+
+
+/* Product Section */
+#product .cusbtn button.btn.custom {
+    color: #fff;
+   background-color: var(--secondary500); 
+}
+
+#product .cusbtn i.bi.bi-caret-right-fill.custom {
+    color: #fff;
+}
+
+.product {
+    overflow-x: hidden;
+}
+/* about section */
+section#about {
+    /* height: 100vh; */
+    background-image: url(/assets/img/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#about .card {
+    box-shadow: 1rem 0.5rem 1rem var(--primary);
+}
+
+
+/* Reviews Section */
+#reviews {
+    background-color: var(--secondary);
+}
+
+.reviewsCard img {
+    margin-bottom: -5vh;
+}
+
+.reviewsCard .card {
+    background-color: var(--secondary500);
+}
+
+
+/* footer section */
+footer {
+    background-color: var(--footer);
+}
+
+.social-link i {
+    color: #000!important;
+    background-color: var(--primary);
+    padding: .2rem;
+}
+
+footer a:hover {
+    text-decoration: underline!important;
+    color: var(--primary);
+    font-size: 1rem!important;
+}

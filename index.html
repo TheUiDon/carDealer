@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/fav.png" type="image/x-icon">
+    <!-- Bs cdn -->
+    <link rel="stylesheet" href="assets/css/vendor/bs/bootstrap.min.css">
+    <!-- Bs cdn font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Car Dealer</title>
+</head>
+<body>
+
+  <!-- Navbar sction -->
+    <header>
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container py-1">
+                <!-- Navbar Image -->
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.svg" alt="Bootstrap" class="img-fluid w-50">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse mt-0 mt-md-3" id="navbarNavDropdown">
+                <!-- Navbar Menu item -->
+                <ul class="navbar-nav flex-row flex-wrap pt-2 py-md-0 mx-lg-auto">
+                  <li class="nav-item col-6 col-lg-auto mb-0 mb-md-1">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item col-6 col-lg-auto mb-0 mb-md-1">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item col-6 col-lg-auto dropdown mb-0 mb-md-1">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Product
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item mb-0 mb-md-1" href="#">Action</a></li>
+                      <li><a class="dropdown-item mb-0 mb-md-1" href="#">Another action</a></li>
+                      <li><a class="dropdown-item mb-0 mb-md-1" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item col-6 col-lg-auto mb-0 mb-md-1">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Line Breaker For md screen -->
+                <hr class="text-dark-50 d-md-block my-3">
+
+                <!-- icon Navbar-->
+                <ul class="navbar-nav flex-row flex-wrap pt-2 py-md-0">
+                    <li class="nav-item col-6 col-lg-auto mb-0 mb-md-1">
+                        <a class="nav-link"  href="#">
+                            <i class="bi bi-search"></i>
+                            <small class="d-lg-none">
+                              Search
+                            </small>
+                        </a>
+                    </li>
+                      <li class="nav-item col-6 col-lg-auto mb-0 mb-md-1">
+                        <a class="nav-link "  href="#">
+                            <i class="bi bi-cart"></i>
+                            <small class="d-lg-none">
+                              Cart
+                            </small>
+                        </a>
+                    </li>
+                      <li class="nav-item col-6 col-lg-auto mb-0 mb-md-1">
+                        <a class="nav-link "  href="#">
+                            <i class="bi bi-person-circle"></i>
+                            <small class="d-lg-none">
+                              Profile
+                            </small>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+
+      <!-- Home Section -->
+      <section class="d-flex align-items-center " id="hero">
+        <div class="container">
+
+          <div class="row text-light">
+              <div class="col-12 col-lg-6">
+                  <h1 class="fs-1 h1">
+                      We sell <br/>
+                      <span class="text-warning fs-1 h1">
+                          Exotic Cars
+                      </span>
+                  </h1>
+                  <p class="p">
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit. Lacus, tortor nunc risus vel eros 
+                  </p>
+                  <button class="btn btn-md">
+                    Contact Us
+                    <i class="bi bi-caret-right-fill"></i>
+                  </button>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- cta section -->
+      <section class="container" id="cta">
+        <div class="cta text-light">
+          <h2 class="text-center text-uppercase">
+            Why we are the best
+          </h2>
+          <div class="features py-4 px-3 rounded">
+            <!-- cta grid -->
+            <div class="row">
+              <!-- first cta -->
+              <div class="col-6 col-md-3 pb-5 pb-md-0 border-end">
+                <div class="text-center  ">
+                  <i class="bi bi-shield-shaded text-light bg-warning rounded p-2 "></i>
+                  <p class="pt-3  mb-0 pb-0">
+                    Safety Design
+                  </p>
+                </div>
+              </div>
+
+              <!-- second cta -->
+              <div class="col-6 col-md-3 pb-5 pb-md-0 border-end ">
+                <div class="text-center">
+                  <i class="bi bi-tools text-light bg-warning rounded p-2 "></i>
+                  <p class="pt-3  mb-0 pb-0">
+                    Repair
+                  </p>
+                </div>
+              </div>
+
+              <!-- third cta -->
+              <div class="col-6 col-md-3 pb-2 pb-md-0 border-end">
+                <div class="text-center">
+                  <i class="bi bi-person-gear text-light bg-warning rounded p-2 "></i>
+                  <p class="pt-3  mb-0 pb-0">
+                    Expect Service
+                  </p>
+                </div>
+              </div>
+
+              <!-- fouth cta -->
+              <div class="col-6 col-md-3 pb-2 pb-md-0 ">
+                <div class="text-center">
+                  <i class="bi bi-headset text-light bg-warning rounded p-2 "></i>
+                  <p class="pt-3  mb-0 pb-0">
+                    24/7 Support
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- product section -->
+      <section class=" mt-5 pt-5" id="product">
+        <!-- header/ title -->
+        <div class="col-12 col-lg-6 mb-5">
+          <h2 class="title text-light ps-3 text-uppercase">
+            Our Products
+          </h2>
+        </div>
+        <!-- product -->
+        <div class="product ">
+          <div class="d-flex">
+            <div class="row ">
+              <!-- card first -->
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12 col-sm-6 align-self-center d-flex">
+                    <img src="assets/img/car1.svg" alt="product image" class="img-fluid product-img me-auto w-75">
+                  </div>
+                  
+                  <div class="col-12 col-sm-4 my-5 mt-5 mt-sm-0 px-5 px-sm-0 align-self-center mx-auto">
+                    <div class="product-card">
+                      <h4 class="text-uppercase">
+                        Camry 2.0
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Sapien, rhoncus, auctor id aliquam orci 
+                        tincidunt volutpat leo. In enim sit nulla augue 
+                        nibh nec. Nulla pharetra, pulvinar tincidunt nisl 
+                        sed. Sed enim lacinia amet, sed diam scelerisque.
+                      </p>
+                      <button class="btn btn-md">
+                        Contact Us
+                        <i class="bi bi-caret-right-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-2"></div>
+                </div>
+              </div>
+
+              <!-- card second -->
+              <div class="col-12">
+                <div class="row">
+                  <!-- card 2 -->
+                  <div class="col-2 order-2 order-sm-0">
+
+                  </div>
+                  <div class="col-12 col-sm-4 my-5 px-5 px-sm-0 align-self-center order-1 order-sm-1">
+                    <div class="product-card">
+                      <h4 class="text-uppercase">
+                        Camry 2.0
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Sapien, rhoncus, auctor id aliquam orci 
+                        tincidunt volutpat leo. In enim sit nulla augue 
+                        nibh nec. Nulla pharetra, pulvinar tincidunt nisl 
+                        sed. Sed enim lacinia amet, sed diam scelerisque.
+                      </p>
+                      <button class="btn btn-md">
+                        Contact Us
+                        <i class="bi bi-caret-right-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6  align-self-center d-flex order-0 order-sm-2">
+                    <img src="assets/img/car2.svg" alt="product image" class="img-fluid product-img ms-auto w-75">
+                  </div>
+                </div>
+              </div>
+
+              <!-- card third -->
+              <div class="col-12">
+                <div class="row">
+                  <!-- card 3 -->
+                  <div class="col-12 col-sm-6 align-self-center d-flex">
+                    <img src="assets/img/car3.svg" alt="product image" class="img-fluid product-img me-auto w-75">
+                  </div>
+                  <div class="col-12 col-sm-4 mt-5 mt-sm-0 px-5 px-sm-0 align-self-center mx-auto">
+                    <div class="product-card">
+                      <h4 class="text-uppercase">
+                        Camry 2.0
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Sapien, rhoncus, auctor id aliquam orci 
+                        tincidunt volutpat leo. In enim sit nulla augue 
+                        nibh nec. Nulla pharetra, pulvinar tincidunt nisl 
+                        sed. Sed enim lacinia amet, sed diam scelerisque.
+                      </p>
+                      <button class="btn btn-md">
+                        Contact Us
+                        <i class="bi bi-caret-right-fill"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-2">
+
+                  </div>
+                </div>
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>
+        
+        <!-- button -->
+        <div class="cusbtn text-center my-5 py-5">
+
+          <button class="btn btn-md custom">
+            Contact Us
+            <i class="bi bi-caret-right-fill custom"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section id="about" class="mt-5 py-5 d-flex align-items-center">
+        <div class="container py-5">
+          <div class="row py-5">
+
+            <div class="col-12 col-sm-6 text-light ">
+              <h4>
+                ABOUT US
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Fusce quis nam sem ultrices nulla pretium dignissim mattis in. 
+                Facilisi libero mattis iaculis urna viverra sem.
+              </p>
+              <p class="py-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Fusce quis nam sem ultrices nulla pretium dignissim mattis in. 
+                Facilisi libero mattis iaculis urna viverra sem.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Fusce quis nam sem ultrices nulla pretium dignissim mattis in. 
+                Facilisi libero mattis iaculis urna viverra sem.
+              </p>
+              
+            </div>
+          
+            <div class="col-2 my-5"></div>
+
+            <div class="col-12 col-sm-4 mx-auto">
+              <form action="" class="card py-5 px-5 text-light">
+                <h4 class="text-dark h5 mb-3 ">
+                  Request Call Back
+                </h4>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Name" id="InputName" aria-describedby="nameHelp">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Email" id="InputEmail" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <input type="number" class="form-control" placeholder="Phone Number" id="InputEmail" aria-describedby="phoneHelp">
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" name="Message" placeholder="Message" id="inputMessage"></textarea>
+                </div>
+                <button class="btn btn-md pe-3">
+                  Send Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- reviews section -->
+      <section id="reviews" class="py-5 text-light">
+        <h2 class="text-center text-uppercase mb-5">
+          Reviews
+        </h2>
+        <div class="reviewsCard container d-flex align-items-center pt-3">
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-3">
+              <div class="text-center mx-auto position-relative">
+                <img src="assets/img/person1.png" alt="reviws image" class="z-3 position-absolute top-0 start-50 translate-middle img-fluid w-25 text-center">
+                <div class="card text-center pt-5 pb-3 px-3 ">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Diam convallis elit placerat nunc, et orci mauris velit. 
+                    Netus tincidunt gravida nam pharetra pellentesque aliquam 
+                    vitae. Integer vulputate pellentesque tristique netus 
+                    tincidunt elementum.
+                  </p>
+                  <h5>
+                    - Chloe O'Brian
+                  </h5>
+                  <span>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+           
+            <div class="col-12 col-sm-3 my-5 my-sm-0">
+              <div class="text-center mx-auto position-relative">
+                <img src="assets/img/person1.png" alt="reviws image" class="z-3 position-absolute top-0 start-50 translate-middle img-fluid w-25 text-center">
+                <div class="card text-center pt-5 pb-3 px-3 ">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Diam convallis elit placerat nunc, et orci mauris velit. 
+                    Netus tincidunt gravida nam pharetra pellentesque aliquam 
+                    vitae. Integer vulputate pellentesque tristique netus 
+                    tincidunt elementum.
+                  </p>
+                  <h5>
+                    - Chloe O'Brian
+                  </h5>
+                  <span>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            
+            <div class="col-12 col-sm-3">
+              <div class="text-center mx-auto position-relative">
+                <img src="assets/img/person1.png" alt="reviws image" class="z-3 position-absolute top-0 start-50 translate-middle img-fluid w-25 text-center">
+                <div class="card text-center pt-5 pb-3 px-3 ">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Diam convallis elit placerat nunc, et orci mauris velit. 
+                    Netus tincidunt gravida nam pharetra pellentesque aliquam 
+                    vitae. Integer vulputate pellentesque tristique netus 
+                    tincidunt elementum.
+                  </p>
+                  <h5>
+                    - Chloe O'Brian
+                  </h5>
+                  <span>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- customer section -->
+      <section id="customer" class="text-dark py-5">
+        <div class="container">
+
+          <h3 class="text-center pb-3">
+            CUSTOMER’S PHOTO
+          </h3>
+          <div class="d-flex">
+            <div class="mx-auto">
+
+              <img src="assets/img/gallery1.png" class="img-fluid" alt="">
+              <img src="assets/img/gallery2.png" class="img-fluid" alt="">
+              <img src="assets/img/gallery3.png" class="img-fluid" alt="">
+              <br />
+              <img src="assets/img/gallery4.png" class="img-fluid" alt="">
+              <img src="assets/img/gallery5.png" class="img-fluid" alt="">
+              <img src="assets/img/gallery6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <p class="small mt-2 col-9 mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Velit bibendum vitae, sagittis sit pellentesque cras aenean lectus. 
+            Aliquam aliquam pellentesque eget cras. Orci nulla quam interdum dolor 
+            nisl. Convallis nibh massa leo amet, auctor lacus. Fames aliquam sed 
+            enim mauris venenatis. Aliquam mauris mauris, gravida convallis. Congue
+             ultrices pharetra adipiscing dui congue.
+            Egestas et pellentesque aliquet placerat tincidunt ornare quam. 
+            Leo cras semper aliquam tellus. A lectus turpis sit ut risus imperdiet. 
+            Euismod convallis habitant dictumst in et elementum nullam. Urna, nunc 
+            bibendum integer quis id porta nullam tempus. Diam eget lorem eget 
+            \sollicitudin feugiat vitae. Orci blandit etiam id proin consequat 
+            libero. Ante facilisis commodo pellentesque non metus cursus sed proin 
+            congue. Tellus, pellentesque accumsan amet tincidunt.
+
+          </p>
+        </div>
+      </section>
+
+    </main>
+    <!-- foter section -->
+    <footer>
+        <section>
+          <div class="container text-light py-5">
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <img src="assets/img/logo.svg" alt="logo" class="w-25 img-fluid">
+                <p class="small mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Alias aliquam cum totam temporibus dolor commodi sequi deleniti 
+                </p>
+
+                <div class="social-link">
+
+                  <i class="bi bi-twitter h6 rounded me-2"></i>
+                  <i class="bi bi-facebook h6 rounded me-2"></i>
+                  <i class="bi bi-linkedin h6 rounded me-2"></i>
+                  <i class="bi bi-youtube h6 rounded me-2"></i>
+                </div>
+              </div>
+              <div class="col-12 col-sm-3 my-5 my-sm-0">
+                <h4 class="text-uppercase text-warning">
+                  Contact Info
+                </h4>
+
+                <ul class="navbar-nav text-decoration-none">
+                  <li class="nav-item">
+                    <a class="text-decoration-none text-light small" href="#">
+                      <Address class="mb-0">
+                      Address: 123 Fifth Avenue,
+                      <br> New York - 10160, USA.
+                    </Address>
+                  </a>
+                </li>
+                  <li class="nav-item">
+                    <a class="text-decoration-none text-light small" href="tel:+91123456789">
+                      Call Us: 91-123-456-789
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-decoration-none text-light small" href="mailto:astonmartin@gmail.com">
+                      astonmartin@gmail.com
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-decoration-none text-light small" href="#">
+                      Mon-Fri: 9:00am - 5:00pm
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-3">
+                <h4 class="text-uppercase text-warning">
+                  Our Services
+                </h4>
+
+                <ul class="navbar-nav text-decoration-none">
+                  <li class="nav-item">
+                    <i class="bi bi-plus"></i>
+                    <a class="text-decoration-none text-light small" href="#">
+                      Car Sales
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <i class="bi bi-plus"></i>
+                    <a class="text-decoration-none text-light small" href="#">
+                      Auto Repair
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <i class="bi bi-plus"></i>
+                    <a class="text-decoration-none text-light small" href="#">
+                      Maintenance Services
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </section>
+    </footer>
+
+    <!-- Bs CDN -->
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="assets/js/vendor/bs/bootstrap.min.js"></script>
+
+</body>
+</html>
